@@ -1,4 +1,5 @@
-pragma solidity >=0.4.21 <0.7.0;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8;
 
 contract Election {
     // model a condidate
@@ -15,7 +16,7 @@ contract Election {
     // store candidate count
     uint256 public candidatesCount;
 
-    constructor() public {
+    constructor() {
         addCandidate("candidate 1");
         addCandidate("candidate 2");
     }
